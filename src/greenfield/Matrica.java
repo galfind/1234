@@ -46,7 +46,6 @@ public class Matrica {
             }
             System.out.println();
         }
-
     }
 }
 
