@@ -11,23 +11,41 @@ public class Matrica {
         for (int i=0; i<y; i++) {
             for (int x=0; x<y; x++) {
                 matrixFirst[i][x] = (int) Math.ceil(Math.random()*10);
-                if (matrixFirst[i][x] == 0) {
-                    System.out.print("Ne rabotet");
-                }
-                else{
-                    System.out.print(matrixFirst[i][x] + " ");
-                }
+                System.out.print(matrixFirst[i][x] + " ");
             }
             System.out.println();// первая матрица рот её шагал
         }
 
         return matrixFirst;
     }
+
+    private static int matrixCheck(){
+        int matrixChecked[][] = matrix(3,3);
+        if (matrixChecked.length == 0)
+        {
+             int a = 1;
+            return a;
+        }
+        else {
+            int a = 0;
+            return a;
+        }
+}
     public static void main(String[] args) {
         System.out.println("Матрица1: ");
-        int matrixFirst[][] = matrix(3,3);
+        if (matrixCheck == 1){
+            System.out.print("cant work");
+        }
+        else {
+            int matrixFirst[][] = matrix(3, 3);
+        }
         System.out.println("Матрица2: ");
-        int matrixSecond[][] = matrix(3,3);
+        if (matrixCheck == 1){
+            System.out.print("cant work");
+        }
+        else {
+            int matrixSecond[][] = matrix(3,3);
+        }
         int m = matrixFirst.length;
         int n = matrixSecond[0].length;
         int d = matrixSecond.length;
@@ -48,4 +66,3 @@ public class Matrica {
         }
     }
 }
-
